@@ -8,7 +8,4 @@
 --    'User'
 --);
 
---INSERT INTO accounts (email, password, balance) VALUES (
-  --  'testuser@gmail.com',
-   -- 'password',
-   -- 0.0)
+INSERT INTO accounts (email, password, balance) VALUES ('testuser@gmail.com','password',0);

@@ -23,7 +23,7 @@ public class AccountController {
 	@Autowired
 	private AccountService accountService;
 	
-	@GetMapping("/all")
+	@GetMapping
 	public ResponseEntity<List<Account>> getAllAccounts(){
 		return ResponseEntity.ok(accountService.getAllAccounts());
 	}
@@ -38,7 +38,7 @@ public class AccountController {
 		return ResponseEntity.ok(accountService.updateAccount(account));
 	}
 	
-	@GetMapping
+	@PostMapping("login")
 	public ResponseEntity<Account> getAccount(@RequestBody Account account){
 		return ResponseEntity.ok(accountService.getAccount(account));
 	}
